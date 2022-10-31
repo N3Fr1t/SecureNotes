@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Note {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    private Long noteId;
     private String title;
     private String text;
 
@@ -20,11 +20,11 @@ public class Note {
     }
 
     public Long getId() {
-        return id;
+        return noteId;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.noteId = id;
     }
 
     public String getTitle() {
